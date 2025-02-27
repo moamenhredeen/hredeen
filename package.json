@@ -1,0 +1,23 @@
+{
+	"name": "hredeen",
+	"version": "0.1.0",
+	"type": "module",
+	"scripts": {
+		"build": "npx @11ty/eleventy",
+		"start": "npx @11ty/eleventy --serve --quiet"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/moamenhredeen/hredeen.git"
+	},
+	"author": {
+		"name": "Moamen Hredeen",
+		"email": "moamen@hredeen.com",
+		"url": "http://hredeen.com/portfolio/"
+	},
+	"license": "MIT",
+	"homepage": "https://github.com/moamenhredeen/hredeen#readme",
+	"devDependencies": {
+		"@11ty/eleventy": "^3.0.0"
+	}
+}
