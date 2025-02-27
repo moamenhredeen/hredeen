@@ -3,7 +3,7 @@ run-name: ${{ github.actor }}
 on: [push]
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: hredeen-runner
     container:
       image: node:22
       options: --name angular-build-container
@@ -16,7 +16,7 @@ jobs:
         run: npm run build
   deploy:
     needs: build
-    runs-on: self-hosted
+    runs-on: hredeen-runner
     steps:
       - name: Publish Output Files
         run: cp -r ${{github.workspace}}/build/* /srv/nginx/
