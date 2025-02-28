@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Typo Draft";
+    font-weight: bold;
+    src: url("/assets/typo_draft.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Petit";
+    font-weight: bold;
+    src: url("/assets/petit.ttf") format("truetype");
+}
+
+html,
+body {
+    margin: 0;
+    body: 0;
+    min-height: 100vh;
+    font-size: 24px;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        font-size: 12rem;
+        font-family: "Typo Draft", serif;
+        color: black;
+        text-decoration: none;
+        transition: 0.2s;
+
+        &:hover {
+            color: blue;
+        }
+    }
+}
+
+#about-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.back-btn {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    svg {
+        height: 32px;
+        width: 32px;
+    }
+}
+
+.wip {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: lightpink;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.2rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}

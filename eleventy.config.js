@@ -1,10 +1,8 @@
 export default function (config) {
   config.addGlobalData("layout", "layout.html");
-  config
-    .addPassthroughCopy({ "**/*.css": "/" })
-    .addPassthroughCopy({ "**/*.otf": "/" })
-    .addPassthroughCopy({ "**/*.ttf": "/" })
-    .addPassthroughCopy("**/*.png");
+  config.addPassthroughCopy("src/assets");
+
+	config.addBundle('html')
 }
 
 export const config = {
